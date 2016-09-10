@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<META HTTP-EQUIV="MSThemeCompatible" content="Yes"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" type="text/css" href="css/alpha.css">
+	<link rel="stylesheet" href="css/MDL/material.min.css">
+	<script src="css/MDL/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- <link rel="stylesheet" type="text/css" href="css/MobBlue/style.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="cordova.js"></script>
+	<script type="text/javascript" src="js/a5.js"></script>
+	<script type="text/javascript" src="js/a5_url.js"></script>
+	<!-- <script type="text/javascript" src="css/MobBlue/style.js"></script> -->
+	<script type="text/javascript" src="js/A5jQueryWithUI.js"></script>
+	<script>
+		if(typeof jQuery != 'undefined') jQuery.noConflict();
+	</script>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript" language="javascript">
+		A5._windowDefaults={title:{tools:{defaults:{'close':{action:'close',name:'close',image:'a5images/windowbuttonclose.png'}}}}}
+		A5.serverSideDateFormat = 'dd/MM/yyyy';
+	</script>
+	<script type="text/javascript" src="_phoneGapSettings.js"></script>
+	<!-- WebRTC Polyfill -->
+	<script src="js/adapter.js"></script>
+</head>
+<body class="MobBluePage">
+	<iframe style="display:none;" id="DLG1.__IFRAME1"></iframe>
+	<input type="hidden" value="" id="DLG1.PARAMETERBUCKET"/>
+	<input type="file" style="position:absolute; top:-1000px;visibility:hidden;" accept="image/*" id="DLG1._GETPHOTO"/><input type="file" style="position:absolute; top:-1000px;visibility:hidden;" name="files[]" multiple = "" id="DLG1._GETFILEMULTI"/><input type="file" style="position:absolute; top:-1000px;visibility:hidden;" name="files[]" id="DLG1._GETFILE"/>
+	<div class="errorTip" style="margin-bottom: 2px; display: none; width: 8in;" id="DLG1.GLOBALERRORS"></div>
+
+	<div id="DLG1.R1">
+		<div class="A5CWLayout" style="max-width: 4in; width: 100%;" >
+			<div id="DLG1.V.R1.STATICTEXT_1" title="" class="video-feed">
+				<video id="v" width="320" height="240">Video stream not available.</video>
+			</div>
+		</div>
+		<div class="A5CWLayout" style="max-width: 4in; width: 100%;" >
+			<div id="DLG1.V.R1.STATICTEXT_2" title="" class="video-feed">
+				<canvas id="c" width="320" height="240">
+				</canvas>
+			</div>
+		</div>
+		<div class="A5CWLayout" style="width: 2in;" >
+			<input
+				type="text"
+				id="DLG1.V.R1.BUFFER0"
+				title=""
+				class="mdl-textfield__input"
+				style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"
+				name="V.R1.BUFFER0"
+				value="">
+		</div>
+		<div class="A5CWLayout" style="width: 2in;" >
+			<input
+				type="text"
+				id="DLG1.V.R1.BUFFER1"
+				title=""
+				class="mdl-textfield__input"
+				style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"
+				name="V.R1.BUFFER1"
+				value="">
+		</div>
+		<div class="A5CWLayout" style="width: 2in;" >
+			<input
+				type="text"
+				id="DLG1.V.R1.BUFFER2"
+				title=""
+				class="mdl-textfield__input"
+				style="width: 100%;box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"
+				name="V.R1.BUFFER2"
+				value="">
+		</div>
+		<div class="A5CWLayout" style="display: none;" >
+			<label id="DLG1.LBL.R1.THRESHOLD_CONTROL" for="DLG1.V.R1.THRESHOLD_CONTROL" title="" class="MobBlueDialogLabel" style="display:block;">Threshold Control</label>
+			<input id="DLG1.V.R1.THRESHOLD_CONTROL" name="V.R1.THRESHOLD_CONTROL" type="hidden">
+			<div id="DLG1.V.R1.THRESHOLD_CONTROL.CONTROL" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"></div>
+		</div>
+		<div class="A5CWLayout" style="width: 2in">
+			<label
+				id="DLG1.LBL.R1.THRESHOLD_VALUE"
+				for="DLG1.V.R1.THRESHOLD_VALUE"
+				title=""
+				class="MobBlueDialogLabel"
+				style="display:block;">Threshold Value</label>
+			<input
+				type="text"
+				id="DLG1.V.R1.THRESHOLD_VALUE"
+				title=""
+				class="mdl-textfield__input"
+				style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"
+				name="V.R1.THRESHOLD_VALUE" value="">
+		</div>
+		<div class="A5CWLayout" style="width: 2in">
+			<label
+				id="DLG1.LBL.R1.MOTION_VALUE"
+				for="DLG1.V.R1.MOTION_VALUE"
+				title=""
+				class="MobBlueDialogLabel"
+				style="display:block;">Motion Value</label>
+			<input
+				type="text"
+				id="DLG1.V.R1.MOTION_VALUE"
+				title=""
+				class="mdl-textfield__input"
+				style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"
+				name="V.R1.MOTION_VALUE"
+				value=""
+				readonly="readonly">
+
+		</div>
+		<div class="A5CWLayout" style="width: " >
+			<label id="DLG1.LBL.R1.BUTTON_1" for="DLG1.V.R1.BUTTON_1" title="" class="MobBlueDialogLabel" style="display:block;">&nbsp;</label>
+			<button
+				type="button"
+				id="DLG1.V.R1.BUTTON_1"
+				class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"></button>
+		</div>
+	</div>
+	<!-- FAB button -->
+	<div style="position: fixed; right: 24px; bottom: 24px;">
+		<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="window._switchStream();">
+		  <i class="material-icons">switch_camera</i>
+		</button>
+	</div>
+
+	<div class="" style="display: none;" id="DLG1.DEBUGUPDATECOMMANDS"></div>
+	<input id="DLG1.V.R1.THRESHOLD_CONTROL" name="V.R1.THRESHOLD_CONTROL" type="hidden"/>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

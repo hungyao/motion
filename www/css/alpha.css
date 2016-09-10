@@ -1,0 +1,50 @@
+html { -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-user-select: none; -ms-touch-action: none;}
+.A5container {float:left;padding:0px;}
+.A5CWLayout {padding: 4px; float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.A5GridHideErrorCol .A5GridErrorCol {display:none; }
+.A5GridRowErrorIcon {display:none;}
+.A5GridHasRowError .A5GridRowErrorIcon {display:inline;}
+.A5GridRowViewMode {display:block;}
+.A5GridRowEditMode {display:none;}
+.A5GridRowInEditMode .A5GridRowViewMode {display:none;}
+.A5GridRowInEditMode .A5GridRowEditMode {display:block;}
+.A5GridRowDirty {display:none;}
+.A5GridRowClean {display:inline;}
+.A5GridRowIsDirty .A5GridRowDirty {display:inline;}
+.A5GridRowIsDirty .A5GridRowClean {display:none;}
+.errorText {color:red;font-size:8pt;}
+.errorTextHighlight {font-weight:bold;font-size:8pt;}
+.errorTip {color:red;background:#fffafa url('a5images/boxsize8x8fillUp5FDiagonalWhite3A232552C2392C239.png');border:1px solid #f88;margin-top:2px;padding:2px;font-size:8pt;}
+.errorInput {color:red;border:1px solid red;margin:1px;}
+.errorInputHighlight {color:red;border:2px solid red;margin:0px;}
+.A5SelectedButton {opacity:.5;filter:alpha(opacity=50);}
+.A5InvisibleLock {background: rgba(0,0,0,0); }
+
+.A5AccordionTitleOn, .A5AccordionTitleOff, .A5AccordionTitleDisabled {display: block;border: 1px solid #999;padding: 2px;text-decoration: none;cursor: pointer;margin-bottom: 2px; padding: 2px}
+.A5AccordionPane {border: 1px solid #999;border-top: none;margin-bottom: 2px;margin-top: -2px;}
+.A5TabTopOn, .A5TabTopOff, .A5TabTopDisabled {display: block;float: left;border: 1px solid #999;border-bottom: none;margin-right: 2px;padding: 2px;text-decoration: none;cursor: pointer;}
+.A5TabTopOn {margin-bottom: -1px;padding-bottom: 3px;}
+.A5TabBottomOn, .A5TabBottomOff, .A5TabBottomDisabled {display: block;float: left;border: 1px solid #999;margin-right: 2px;padding: 2px;text-decoration: none;cursor: pointer;}
+.A5TabBottomOn {border-top: none;padding-top: 3px;}
+.A5TabLeftOn, .A5TabLeftOff, .A5TabLeftDisabled {display: block;border: 1px solid #999;margin-bottom: 2px;padding: 2px;text-decoration: none;cursor: pointer;}
+.A5TabLeftOn {margin-right: -1px;padding-right: 3px;border-right: none;}
+.A5TabRightOn, .A5TabRightOff, .A5TabRightDisabled {display: block;border: 1px solid #999;border-left: none;margin-bottom: 2px;padding: 2px;text-decoration: none;cursor: pointer;}
+.A5TabRightOn {margin-left: -1px;padding-left: 3px;}
+.A5TabTopPane, .A5TabBottomPane, .A5TabLeftPane, .A5TabRightPane {border: 1px solid #999; padding: 2px;}
+
+
+.A5TabBand {border: 1px solid #999; padding: 0px;}
+.A5TabBandTabOn, .A5TabBandTabOff, .A5TabBandTabDisabled {position: relative;display: block;border: 1px solid #999;border-bottom: none;margin-right: 2px;margin-top: 2px;padding: 2px;text-decoration: none;cursor: pointer;white-space: nowrap;}
+.A5TabBandTabOn {margin-bottom: -1px;padding-bottom: 3px;}
+.A5TabBandSeparator {border: none;border-top: 1px solid #999;height: 3px;padding: 0px;font: 0pt arial;}
+.A5TabBandLeftScroll {position: relative;display: block;padding: 2px;margin-bottom: -1px;padding-bottom: 3px;text-decoration: none;border: 1px solid #999;border-left: none;border-bottom: none;}
+.A5TabBandRightScroll {position: relative;display: block;padding: 2px;margin-bottom: -1px;padding-bottom: 3px;text-decoration: none;border: 1px solid #999;border-right: none;border-bottom: none;}
+.A5TabBandTabDisabled, .A5TabTopDisabled, .A5TabLeftDisabled, .A5TabRightDisabled, .A5TabBottomDisabled, .A5AccordionTitleDisabled {opacity: .5; filter: alpha(opacity: 50)}
+.A5Window {-moz-border-radius: 3px; -webkit-border-radius: 3px;}
+.A5WindowLock{border: 1px solid #000;background: #222;opacity: .25;filter: alpha(opacity: 25);}
+
+.A5AccordionTitleOn:hover, .A5AccordionTitleOff:hover, .A5TabBandTabOff:hover, .A5TabTopOff:hover, .A5TabLeftOff:hover, .A5TabRightOff:hover, .A5TabBottomOff:hover{text-decoration: underline;}
+
+.A5MenuItem {text-decoration:none;}
+.A5DialogRSSeparator {border-top: 1px dotted #ccc; line-height:5px; margin-top: 5px;}
+.A5DialogRSFooter {margin-top: 10px;}

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ca.tjia.motion" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>New Motion</name>
+    <description>
+        An Apache Cordova application that implements video motion detection.
+    </description>
+    <author email="hung_yao@hotmail.com" href="http://tjia.ca">
+        Andrew Tjia
+    </author>
+    <icon src="res/icon.png" />
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <preference name="xwalkVersion" value="20+" />
+    <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
+    <preference name="xwalkMode" value="embedded" />
+    <preference name="xwalkMultipleApk" value="true" />
+    <preference name="android-minSdkVersion" value="16" />
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <engine name="android" spec="~5.2.2" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-crosswalk-webview" spec="~2.0.0" />
+    <plugin name="cordova-plugin-camera" spec="~2.2.0" />
+    <plugin name="com.mbppower.camerapreview" spec="https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git" />
+</widget>
